@@ -1,5 +1,5 @@
 ## 簡介
-因為未接觸過前後端分離，又在因緣巧合下看到springboot + vue的相關技術文章，因此透過此專案作為練習
+本專案為針對前後端分離專案實際練習項目，因在網路上看到SpringBoot + Vue的相關技術文章，因此透過實作代辦事項管理系統做為練習。
 
 ---
 
@@ -12,13 +12,13 @@
 
 ---
 ## FrontEnd
-前端部分以 VueJS 搭建
+前端部分以 Vue CLI 快速搭建
 
 ### 安裝及啟動
 * #### 安裝Node.js npm　:　https://nodejs.org/en/
 * #### 安裝Vue CLI　:　`npm install -g @vue/cli`
-* #### 建立專案　:　`vue create [專案名稱]`
-* #### 進入該專案目錄　:　`cd [專案名稱]`
+* #### 建立專案　:　`vue create FrontEnd`
+* #### 進入該專案目錄　:　`cd FrontEnd`
 * #### 啟動Server　:　`npm run serve`
 
 ---
