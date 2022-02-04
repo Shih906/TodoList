@@ -10,6 +10,29 @@
 透過 Spring Initializr : https://start.spring.io/ 
 ![image](https://user-images.githubusercontent.com/88469902/145811430-3d7c4503-ed96-4ef8-9edf-cdc0cf8fb511.png)
 
+### application.properties
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/todolist?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=mysqlpassword
+
+
+## Hibernate Properties
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.naming.physical-strategy= org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+## sql log
+logging.level.org.hibernate.SQL=debug
+logging.level.org.hibernate.type=TRACE
+logging.level.org.hibernate.type.descriptor.sql=trace
+
+## Server port
+server.port=9000
+```
+
+### 
 ---
 ## FrontEnd
 前端部分以 Vue CLI 快速搭建
