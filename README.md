@@ -3,6 +3,24 @@
 
 ---
 
+## Demo
+### 選擇代辦事項
+![image](https://github.com/Shih906/TodoList/blob/master/gif/select.gif)
+
+### 新增代辦事項
+![image](https://github.com/Shih906/TodoList/blob/master/gif/add.gif)
+
+### 編輯代辦內容
+![image](https://github.com/Shih906/TodoList/blob/master/gif/edit.gif)
+
+### 更改代辦至完成
+![image](https://github.com/Shih906/TodoList/blob/master/gif/changeStatus.gif)
+
+### 刪除代辦事項
+![image](https://github.com/Shih906/TodoList/blob/master/gif/delete.gif)
+
+---
+
 ## Backend
 本專案以 SpringBoot 作為核心框架，搭建了 Restful Api ，並以 Spring Data JPA + Hibernate 框架實現 CRUD ； 資料庫則選用 MySQL
 
@@ -32,7 +50,54 @@ logging.level.org.hibernate.type.descriptor.sql=trace
 server.port=9000
 ```
 
-### 
+---
+### pom.xml 依賴項
+```
+  <dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+```
 ---
 ## FrontEnd
 前端部分以 Vue CLI 快速搭建
@@ -45,23 +110,6 @@ server.port=9000
 * #### 啟動Server　:　`npm run serve`
 
 ---
-## Demo
-### 選擇代辦事項
-![image](https://github.com/Shih906/TodoList/blob/master/gif/select.gif)
-
-### 新增代辦內容
-![image](https://github.com/Shih906/TodoList/blob/master/gif/add.gif)
-
-### 編輯代辦內容
-![image](https://github.com/Shih906/TodoList/blob/master/gif/edit.gif)
-
-### 更改代辦至完成
-![image](https://github.com/Shih906/TodoList/blob/master/gif/changeStatus.gif)
-
-### 刪除代辦事項
-![image](https://github.com/Shih906/TodoList/blob/master/gif/delete.gif)
-
----
 ## 開發工具
 ### Eclipse
 連結 : https://www.eclipse.org/downloads/
@@ -69,3 +117,13 @@ server.port=9000
 ### VS Code
 連結 : https://code.visualstudio.com/
 ![image](https://user-images.githubusercontent.com/88469902/145811670-29c07a02-36f4-478b-a280-f85c8c01f12b.png)
+
+---
+## 套件與版本環境
+Java  : 11
+
+Spring Boot : 2.6.1
+
+Vue CLI : 2.6.11
+
+MySQL :  8.0.26
