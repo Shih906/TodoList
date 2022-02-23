@@ -4,7 +4,7 @@
 ---
 
 ## Backend
-本專案以 SpringBoot 作為核心框架，搭建了 Restful Api ，並以 Hibernate 框架實現 JPA ； 資料庫則選用 MySQL
+本專案以 SpringBoot 作為核心框架，搭建了 Restful Api ，並以 Spring Data JPA + Hibernate 框架實現 CRUD ； 資料庫則選用 MySQL
 
 ### 專案建置
 透過 Spring Initializr : https://start.spring.io/ 
